@@ -1,0 +1,20 @@
+name: Playwright tests
+on:
+  push:
+   branches: [js-yml-test]
+  pull_request:
+    branches: [js-yml-test]
+jobs:
+  test:
+   runs-on: ubuntu-latest
+   timeout-minutes: 60
+   steps:
+     - uses: actions/checkout@v4
+     - uses: actions/setup-node@v6
+       with:
+          node-version: lts/*
+        
+     - name: Run js files
+       run: node app.js
+
+    
