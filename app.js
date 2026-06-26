@@ -61,5 +61,6 @@ players = AuctionUtils.nameToUpperCase(players);
 AuctionUtils.auction(players, team1, team2);
 AuctionUtils.auctionResult(team1, team2);
 
-console.log(`Total amount of team A is ${team1.totalAmount()}`);
-console.log(`Total amount of team B is ${team2.totalAmount()}`);
+console.log(`Total amount of team A is: ${team1.totalAmount()}`);
+
+console.log(`Total amount of team B is: ${team2.totalAmount()}`);
