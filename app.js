@@ -19,7 +19,7 @@ for(let player of playerData) {
             player.age,
             player.role,
             player.basePrice,
-            0            
+            player.runs          
         );
         batsman.soldPrice = player.soldPrice;
         batsman.isSold = player.isSold;
@@ -33,7 +33,7 @@ for(let player of playerData) {
             player.age,
             player.role,
             player.basePrice,
-            0
+            player.wickets
         );
         bowler.soldPrice = player.soldPrice;
         bowler.isSold = player.isSold;
@@ -46,8 +46,8 @@ for(let player of playerData) {
             player.age,
             player.role,
             player.basePrice,
-            0,
-            0
+            player.runs,
+            player.wickets
         );
         allRounder.soldPrice = player.soldPrice;
         allRounder.isSold = player.isSold;
@@ -64,3 +64,8 @@ AuctionUtils.auctionResult(team1, team2);
 console.log(`Total amount of team A is: ${team1.totalAmount()}`);
 
 console.log(`Total amount of team B is: ${team2.totalAmount()}`);
+
+//Display all players
+// for(let player of players) {
+//     console.log(player.displayPlayer());
+// }

@@ -4,8 +4,9 @@
         "name": "Virat Kohli",
         "age": 36,
         "role": "Batsman",
-        "basePrice": 200,
-        "soldPrice": 240,
+        "runs": 8500,
+        "basePrice": 200000,
+        "soldPrice": 0,
         "isSold": false
     },
     {
@@ -13,8 +14,9 @@
         "name": "Rohit Sharma",
         "age": 38,
         "role": "Batsman",
-        "basePrice": 180,
-        "soldPrice": 220,
+        "runs": 7800,
+        "basePrice": 180000,
+        "soldPrice": 0,
         "isSold": false
     },
     {
@@ -22,8 +24,9 @@
         "name": "Shubman Gill",
         "age": 25,
         "role": "Batsman",
-        "basePrice": 170,
-        "soldPrice": 205,
+        "runs": 4200,
+        "basePrice": 170000,
+        "soldPrice": 0,
         "isSold": false
     },
     {
@@ -31,8 +34,9 @@
         "name": "Suryakumar Yadav",
         "age": 34,
         "role": "Batsman",
-        "basePrice": 175,
-        "soldPrice": 215,
+        "runs": 5100,
+        "basePrice": 175000,
+        "soldPrice": 0,
         "isSold": false
     },
     {
@@ -40,8 +44,9 @@
         "name": "Jasprit Bumrah",
         "age": 31,
         "role": "Bowler",
-        "basePrice": 190,
-        "soldPrice": 240,
+        "wickets": 320,
+        "basePrice": 190000,
+        "soldPrice": 0,
         "isSold": false
     },
     {
@@ -49,8 +54,9 @@
         "name": "Mohammed Shami",
         "age": 35,
         "role": "Bowler",
-        "basePrice": 170,
-        "soldPrice": 195,
+        "wickets": 280,
+        "basePrice": 170000,
+        "soldPrice": 0,
         "isSold": false
     },
     {
@@ -58,8 +64,9 @@
         "name": "Mohammed Siraj",
         "age": 31,
         "role": "Bowler",
-        "basePrice": 165,
-        "soldPrice": 190,
+        "wickets": 210,
+        "basePrice": 165000,
+        "soldPrice": 0,
         "isSold": false
     },
     {
@@ -67,8 +74,10 @@
         "name": "Hardik Pandya",
         "age": 32,
         "role": "AllRounder",
-        "basePrice": 210,
-        "soldPrice": 260,
+        "runs": 4200,
+        "wickets": 180,
+        "basePrice": 2202010,
+        "soldPrice": 0,
         "isSold": false
     },
     {
@@ -76,8 +85,10 @@
         "name": "Ravindra Jadeja",
         "age": 37,
         "role": "AllRounder",
-        "basePrice": 195,
-        "soldPrice": 235,
+        "runs": 5600,
+        "wickets": 320,
+        "basePrice": 190005,
+        "soldPrice": 0,
         "isSold": false
     },
     {
@@ -85,8 +96,10 @@
         "name": "Axar Patel",
         "age": 32,
         "role": "AllRounder",
-        "basePrice": 160,
-        "soldPrice": 185,
+        "runs": 3100,
+        "wickets": 170,
+        "basePrice": 160000,
+        "soldPrice": 0,
         "isSold": false
     }
 ]
