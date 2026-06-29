@@ -4,6 +4,8 @@ on:
    branches: [main]
   pull_request:
     branches: [main]
+  schedule:
+    - cron: '55 2 * * *'    //minute hour day-of -month month day-of-week
 jobs:
   test:
    runs-on: ubuntu-latest

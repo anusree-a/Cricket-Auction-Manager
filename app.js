@@ -6,12 +6,12 @@ import Team from './models/team.js';
 import AuctionUtils from './utils/auctionUtils.js';
 import playerData from './testData.json' with { type: 'json' };
 
-
-let team1 = new Team("1", "A");
+//create team objects
+let team1 = new Team("1", "A");  
 let team2 = new Team("2", "B");
 
 let players = [];
-for(let player of playerData) {
+for(let player of playerData) {    //Read data from json and create player object in each iteration and push it to players array
     if(player.role == "Batsman"){
         let batsman = new Batsman(
             player.id,
@@ -56,10 +56,12 @@ for(let player of playerData) {
 
 }
 
-players = AuctionUtils.validateAge(players);
-players = AuctionUtils.nameToUpperCase(players);
-AuctionUtils.auction(players, team1, team2);
-AuctionUtils.auctionResult(team1, team2);
+players = AuctionUtils.validateAge(players);    //Validate age of players and remove players whose age less than 18
+players = AuctionUtils.nameToUpperCase(players);  //convert name of players to upper case
+
+
+AuctionUtils.auction(players, team1, team2);   //Performs auction and assign to 2 teams
+AuctionUtils.auctionResult(team1, team2);     //Display auction result
 
 console.log(`Total amount of team A is: ${team1.totalAmount()}`);
 
@@ -69,3 +71,5 @@ console.log(`Total amount of team B is: ${team2.totalAmount()}`);
 // for(let player of players) {
 //     console.log(player.displayPlayer());
 // }
+
+// team1.displayTeam();

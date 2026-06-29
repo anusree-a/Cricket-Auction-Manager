@@ -19,18 +19,18 @@ class AuctionUtils {
         for(let i=0; i < players.length; i++){
            
             if( i < 5 ) {
-                let multiplier = Math.floor(Math.random() * 3) + 5;
-                let soldPrice = players[i].basePrice * multiplier;
-                players[i].markSold(soldPrice);
-                players[i].teamName = team1.teamName;
-                team1.addPlayer(players[i]);
+                let multiplier = Math.floor(Math.random() * 3) + 5;   
+                let soldPrice = players[i].basePrice * multiplier;     //Calculate sold price
+                players[i].markSold(soldPrice);   
+                players[i].teamName = team1.teamName;   //Assign team name to player
+                team1.addPlayer(players[i]); 
                 
                
 
             }
             
             else {
-                let multiplier = Math.floor(Math.random() * 3) + 1;
+                let multiplier = Math.floor(Math.random() * 3) + 5;
                 let soldPrice = players[i].basePrice * multiplier;
                 players[i].markSold(soldPrice);
                 players[i].teamName = team2.teamName;
